@@ -17,4 +17,9 @@ public class HttpConfig {
      */
     public static final String REQUEST_FAILED = "201";
 
+    /**
+     * 聚合数据API
+     */
+    public static final String BASE_API = "http://v.juhe.cn/";
+
 }
