@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -35,7 +36,7 @@ public class HomeFragment extends Fragment {
         mHomeViewModel.newsBean.observe(getActivity(), new Observer<NewsBean>() {
             @Override
             public void onChanged(NewsBean newsBean) {
-
+                Log.d("HomeFragment",newsBean.toString());
             }
         });
         return root;
