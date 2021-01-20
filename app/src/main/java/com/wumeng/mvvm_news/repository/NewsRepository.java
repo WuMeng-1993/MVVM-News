@@ -24,7 +24,9 @@ import io.reactivex.schedulers.Schedulers;
 public class NewsRepository {
 
     public MutableLiveData<NewsBean> getNews(String type,String appKey) {
+
         MutableLiveData<NewsBean> mutableLiveData = new MutableLiveData<>();
+
         ApiServices apiServices = RetrofitServiceBuilder.createService(ApiServices.class);
         apiServices.getNews(type, appKey)
                 .subscribeOn(Schedulers.newThread())

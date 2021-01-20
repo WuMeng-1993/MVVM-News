@@ -12,7 +12,7 @@ import com.wumeng.mvvm_news.repository.NewsRepository;
 /**
  * @author WuMeng
  * @date 2020/12/22
- * desc:
+ * desc: ViewModel
  */
 class HomeViewModel extends ViewModel {
 
